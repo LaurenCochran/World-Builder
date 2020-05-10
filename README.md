@@ -8,6 +8,6 @@ A web based app where you can create characters and a world and save it to your 
 - Homepage
 
 ## To implement
--SSO
--character template
+- SSO
+- character template
 - world template 
