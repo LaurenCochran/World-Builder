@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #2a2626;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#navbar a:hover {
+  background-color: #717171;
+  color: white;
+}
+
+#navbar a.active {
+  background-color: #802f3c;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
