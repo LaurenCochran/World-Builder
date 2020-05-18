@@ -28,9 +28,35 @@ body {
   color: white;
 }
 
+#navbar a.right{
+    float:right;
+    height: 30px;
+    width:208.25px;
+    padding-right: 25px;
+}
+
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
+
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #717171;
+    color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+.header p{
+    margin-top: 0; 
+}
+
+
+
 
