@@ -1,0 +1,72 @@
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" type="text/css" href="characters.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+   <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<title>Character Creation</title>
+</head>
+<body>
+     <div class="header">
+        <h1>World Builder</h1>
+         <p>Where the world is at your fingertips</p>
+    </div>
+    
+   <div id="navbar">
+        <a  href="index.html">Home</a>
+        <a class="active" href="javascript:void(0)">Characters</a>
+        <a href="world.html">World</a>
+       <a id = "name" class = "right" onclick="logged.logOut()" ></a>
+    </div>
+    
+    <div id = "container">
+        <div class="sidenav">
+            <a id = "create" class = "savedChars">New Character</a>
+        </div>
+     </div>
+       <div class = "info">
+            <form id = "scroll">
+                <label for="charName">Character Name:</label>
+                <input type="text" id="charName" name="charName"><br>
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age"><br>
+                <label for="bday">Birthday:</label>
+                <input type="text" id="bday" name="bday"><br>
+                <label for="nationality">Nationality:</label>
+                <input type="text" id="nationality" name="nationality"><br>
+                <label for="birthp">Birthplace:</label>
+                <input type="text" id="birthp" name="birthp"><br>
+                <label for="job">Job:</label>
+                <input type="text" id="job" name="job"><br>
+                <label for="eye">Eye Color:</label>
+                <input type="text" id="eye" name="eye"><br>
+                <label for="hairColor">Hair Color:</label>
+                <input type="text" id="hairColor" name="hairColor"><br>
+                <label for="height">Height:</label>
+                <input type="text" id="height" name="height"><br>
+                <label for="features">Defining features:</label>
+                <input type="text" id="features" name="features"><br>
+                <label for="fears">Fears:</label>
+                <input type="text" id="fears" name="fears"><br>
+                <label for="goals">Goals:</label>
+                <input type="text" id="goals" name="goals"><br>
+                <label for="additional">Additional info:</label>
+                <input type="text" id="additional" name="additional"><br>
+                <input id = "submit" type="submit" value="Save" onclick = "saveCharFile()">
+            </form>
+        </div>
+   
+    
+    <script src="firebase.js"></script>
+    <script src="loggedin.js"></script>
+    <script src="sticky.js"></script>
+    <script src="note.js"></script>
+    
+</body>
+
+</html>
